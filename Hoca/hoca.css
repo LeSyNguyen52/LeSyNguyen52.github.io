@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Khung bể cá toàn màn hình */
+
 .aquarium {
   position: relative;
   width: 100vw;
@@ -18,7 +18,7 @@ body {
   overflow: hidden;
 }
 
-/* Nút quay lại trang chủ */
+
 .back-btn {
   position: fixed;
   top: 14px;
@@ -38,7 +38,7 @@ body {
   background: rgba(15, 23, 42, 0.85);
 }
 
-/* Tia nắng rọi từ mặt nước */
+
 .sunrays {
   position: absolute;
   inset: 0;
@@ -52,14 +52,12 @@ body {
   pointer-events: none;
 }
 
-/* Thuộc tính chung cho cá và thợ lặn */
 .actor {
   position: absolute;
   user-select: none;
   pointer-events: none;
 }
 
-/* 1. Đàn cá xa (chạy ngang chậm) */
 .faint-school {
   width: 240px;
   top: 14%;
@@ -68,7 +66,6 @@ body {
   animation: swimLeftRight 28s linear infinite;
 }
 
-/* 2. Cá mập (bơi nhanh, nhấp nhô nhẹ) */
 .shark {
   width: 250px;
   top: 22%;
@@ -76,7 +73,6 @@ body {
   animation: swimShark 16s ease-in-out infinite;
 }
 
-/* 3. Đàn cá vàng */
 .goldfish {
   width: 165px;
   top: 48%;
@@ -84,7 +80,6 @@ body {
   animation: swimRightLeft 19s ease-in-out infinite;
 }
 
-/* 4. Rùa biển (bơi thong thả gần đáy) */
 .turtle {
   width: 170px;
   bottom: 16%;
@@ -92,7 +87,6 @@ body {
   animation: swimTurtle 24s ease-in-out infinite;
 }
 
-/* 5. Thợ lặn 1 (xanh đen) */
 .diver1 {
   width: 195px;
   top: 32%;
@@ -100,7 +94,6 @@ body {
   animation: swimDiver1 21s ease-in-out infinite;
 }
 
-/* 6. Thợ lặn 2 (đỏ - bơi ngược chiều từ phải qua) */
 .diver2 {
   width: 185px;
   top: 56%;
@@ -108,7 +101,6 @@ body {
   animation: swimDiver2 23s ease-in-out infinite;
 }
 
-/* 7. Thợ lặn 3 (xanh lá - lặn sâu hơn) */
 .diver3 {
   width: 180px;
   top: 68%;
@@ -116,9 +108,6 @@ body {
   animation: swimDiver3 25s ease-in-out infinite;
 }
 
-/* ================= KEYFRAMES CHUYỂN ĐỘNG ================= */
-
-/* Bơi trái -> phải rồi quay đầu phải -> trái */
 @keyframes swimLeftRight {
   0% {
     left: -260px;
@@ -142,7 +131,6 @@ body {
   }
 }
 
-/* Bơi phải -> trái rồi quay đầu trái -> phải */
 @keyframes swimRightLeft {
   0% {
     left: calc(100vw + 20px);
@@ -172,7 +160,6 @@ body {
   }
 }
 
-/* Cá mập lượn sóng */
 @keyframes swimShark {
   0% {
     left: -280px;
@@ -202,7 +189,6 @@ body {
   }
 }
 
-/* Rùa biển bơi chậm rãi */
 @keyframes swimTurtle {
   0% {
     left: -200px;
@@ -232,7 +218,6 @@ body {
   }
 }
 
-/* Thợ lặn 1: lặn chéo lên xuống */
 @keyframes swimDiver1 {
   0% {
     left: -220px;
@@ -262,7 +247,6 @@ body {
   }
 }
 
-/* Thợ lặn 2: xuất phát từ bên phải */
 @keyframes swimDiver2 {
   0% {
     left: calc(100vw + 30px);
@@ -292,7 +276,6 @@ body {
   }
 }
 
-/* Thợ lặn 3: bơi tầng sâu */
 @keyframes swimDiver3 {
   0% {
     left: -220px;
@@ -322,7 +305,6 @@ body {
   }
 }
 
-/* ================= BONG BÓNG NƯỚC ================= */
 .bubbles span {
   position: absolute;
   bottom: -40px;
@@ -364,7 +346,6 @@ body {
   }
 }
 
-/* ================= ĐÁY CÁT & RONG BIỂN ================= */
 .seabed {
   position: absolute;
   bottom: 0;
