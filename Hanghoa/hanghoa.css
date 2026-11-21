@@ -10,7 +10,7 @@ body {
     color: #0f172a;
 }
 
-/* Thanh trên cùng & nút về trang chủ */
+
 .top-bar {
     background: linear-gradient(135deg, #0f172a, #1e3a8a);
     color: #ffffff;
@@ -50,7 +50,7 @@ body {
     font-weight: 700;
 }
 
-/* Khung lưới thẻ sản phẩm */
+
 .container {
     max-width: 1160px;
     margin: 28px auto 48px;
